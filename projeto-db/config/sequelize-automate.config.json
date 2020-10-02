@@ -1,0 +1,17 @@
+{
+    "dbOptions":{
+        "database": "ong",
+        "username": "root",
+        "password": "daniel666",
+        "dialect": "mysql",
+        "host": "localhost",
+        "port": 3306,
+        "logging": false
+    },
+    "options": {
+        "type": "js",
+        "camelCase": true,
+        "dir": "models"
+    }
+
+}

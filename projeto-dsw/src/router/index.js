@@ -4,12 +4,19 @@ import Home from '../views/Home.vue'
 import Criancas from '../views/Criancas.vue'
 import Estagiarios from '../views/Estagiarios.vue'
 import Voluntarios from '../views/Voluntarios.vue'
+import Login from '../views/Login.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
+    name: 'Login',
+    component: Login,
+    meta:{notRenderMenu: true},
+  },
+  {
+    path: '/home',
     name: 'Home',
     component: Home
   },

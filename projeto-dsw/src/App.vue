@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  
+  methods:{
+    renderMenu(){
+      return !this.$route.matched.some(record => record.meta.notRende  )
+    }
+  }
 }
 </script>
 
