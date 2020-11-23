@@ -34,14 +34,14 @@ const users = [
         pwd: "456"
         }
 ]
-passaport.use(
+passport.use(
     new localStrategy({
         usernameField: "user",
         passwordField: "pwd"
     },
     (username, password, done) =>  {
         //pode ser de um banco de dados ou arquivo, lista , etc
-        let user = users.fin((user) => {
+        let user = users.find((user) => {
             return user.email == username && user.pwd === password;
         })
 
@@ -56,7 +56,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 //estratégia de login (Local) - passaporte local
 //gerenciador de cors - cors
-app.use(cors({credentials: true, origin: "http://localhost:8080"}));
+app.use(cors({credentials: true, origin: "http://localhost:3030"}));
 
 app.post("/api/login", (request, response, next) => {
     passport.authenticate("local", (err, user, info)=>{

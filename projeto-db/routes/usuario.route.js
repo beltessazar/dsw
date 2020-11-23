@@ -6,7 +6,7 @@ const routes = express.Router();
 //const Usuario = model.usuarioModel;
 routes.post("/usuario", usuarioController.create);
 //routes.get("/usuario/:id", usuarioController.getById);
-routes.get("/usuario", usuarioController.getAll);
+routes.get("/usuarios", usuarioController.getAll);
 //routes.delete("/usuario/:id", usuarioController.deleteById);
 //routes.put("/usuario/:id", usuarioController.alterById);
 

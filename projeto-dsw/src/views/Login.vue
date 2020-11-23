@@ -33,7 +33,7 @@
         ></b-form-input>
         </b-form-group>
 
-        <b-button type="submit">Entrar</b-button>
+        <b-button type="submit" >Entrar</b-button>
       </b-form>
     </div>      
   </div>
@@ -63,6 +63,7 @@ export default {
             })
             .catch(errors=>{
                 console.log("Falha no Login!");
+                alert("Falha no Login!");
                 console.log(errors);
             })
         }
